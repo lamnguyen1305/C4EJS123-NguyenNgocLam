@@ -127,7 +127,7 @@ for(let i = 1; i <= y ; i++){
     console.log('L');
 }
 for(let z = 4; z <= x ; z++){
-    console.log('H')};
+    console.log('H');
 }
 
 //9.b.
@@ -138,7 +138,7 @@ for(let y = 1; y <= x; y++){
     console.log('L');
 }
 for(; x < n; x++){
-    console.log('H';)
+    console.log('H');
 }
 
 //9.c.
