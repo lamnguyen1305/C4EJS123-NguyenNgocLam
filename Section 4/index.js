@@ -53,6 +53,14 @@ console.log(jobSearch);
 3.1. outermost layer is array
 3.2. Hits is Array
 3.3. Find the job's tiltle, locations, salary, benefits, skills and requirements
+for (let i = 0; i < jobSearch.hits.length; i++) {
+    console.log('---------------------------------------');
+    console.log(jobSearch.hits[i].jobTitle);
+    console.log(`Vị trí: ${jobSearch.hits[i].locations}`);
+    console.log(`Mức lương: ${jobSearch.hits[i].salaryMax}`);
+    console.log(`Phúc lợi: ${jobSearch.hits[i].benefits}`);
+    console.log(`Kỹ năng Yêu cầu: ${jobSearch.hits[i].skills}`);
+}
 
 //REVIEW
 
@@ -125,7 +133,7 @@ for(let j = 0; j < products.length; j++){
     console.log(`#${j+1}. Name : ${products[j].Name}`);
     console.log(`   Price : ${products[j].Price}`);
 }
-let position = prompt('Enter product position');
+let position = Number(prompt('Enter product position'));
 let x = products.length + 1;
 while(position > x || position != Number){
     alert('There is no product at this position');
@@ -142,3 +150,39 @@ if(position <= x){
 
 5.3. 
 
+let cat = prompt('Enter your category');
+for(i = 0; i < products.length; i++){
+    if(products[i].category == danhmuc){
+        console.log(`Name: ${products[i].Name}`);
+        console.log(`Price: ${products[i].Price}`);
+    }
+}
+
+5.4. 
+
+products[0].providers = ['Phukienzero', 'Dientuccc'];
+products[1].providers = ['Tgdd', 'Ddghn', 'Vhstore'];
+products[2].providers = ['Tgdd'];
+products[3].providers = ['Tgdd'];
+
+for(i = 0; i < products.length; i++){
+    console.log(`#${i+1}. ${products[i].Name}`);
+    console.log(`   Price: ${products[i].Price}`);
+    console.log(`   Providers: ${products[i].providers}`);
+}
+
+5.5. 
+
+let pro = prompt('Enter provider');
+for(i = 0; i < products.length; i++){
+    for(j = 0; j = products[i].providers.length; j++){
+        if(pro == products[i].providers[j]){
+            console.log(`Name: ${products[i].Name}`);
+            console.log(`Brand: ${products[i].Brand}`);
+            console.log(`Price: ${products[i].Price}`);
+            console.log(`Color: ${products[i].Color}`);
+            console.log(`Category: ${products[i].Category}`);
+            console.log(`Providers: ${products[i].providers}`);
+        }
+    }
+}
