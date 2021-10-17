@@ -1,0 +1,46 @@
+/* 1.  */
+p{
+    color: red;
+}
+
+/* 2.   */
+.ex2{
+    background-color:  #00FF00;
+}
+
+/* 3.  */
+.ex3{
+    width: 24px;
+}
+
+/* 4.  */
+div{
+    font-size: 3em;
+    background: wheat
+}
+
+/* 5.  */
+#div1{
+    font-size: 18px;
+}
+#div2{
+    color: blue;
+}
+
+/* 6.  */
+a[target='_blank']{
+    color: yellow;
+}
+
+/* 7.  */
+ul > li{
+    font-weight: bold;
+}
+
+/* 9.  */
+.item span{
+    height: 18px;
+}
+.item > div > span{
+    font-style: italic;
+}
