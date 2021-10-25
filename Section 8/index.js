@@ -14,7 +14,7 @@ setInterval(exercise4, 4000);
 // a) A variable declared by let won't exist after the function finish running
 // b) A variable declared by var still exist after the function finish running
 
-// 4) getElementsByTagName
+4
 
 let x = document.getElementsByTagName('li');
 for(let i=0 ; i < x.length ; i++){
